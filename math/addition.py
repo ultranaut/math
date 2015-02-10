@@ -1,17 +1,9 @@
 """Addition
 
-   Thus far, these will only work for the natural numbers.
+   These will only work for the natural numbers.
 """
 
-# http://www.catonmat.net/blog/secret-perl-operators/
-def inc(n):
-    """Increment an integer."""
-    return -~n
-
-def dec(n):
-    """Decrement an integer."""
-    return ~-n
-
+from utils import *
 
 def naive_r(augend, addend):
     """A recursive definition of addition.

@@ -3,7 +3,7 @@
    Thus far, these will only work for the natural numbers.
 """
 
-import math
+from utils import *
 
 table = [
     [ 0,  0,  0,  0,  0,  0,  0,  0,  0,  0],
@@ -18,23 +18,6 @@ table = [
     [ 0,  9, 18, 27, 36, 45, 54, 63, 72, 81]
 ]
 
-# http://www.catonmat.net/blog/secret-perl-operators/
-def inc(n):
-    """Increment an integer."""
-    return -~n
-
-def dec(n):
-    """Decrement an integer."""
-    return ~-n
-
-def digit_count(n, base=10):
-    return math.ceil(math.log(n, base))
-
-def halve(n):
-    return n>>1
-
-def double(n):
-    return n<<1
 
 def brute(m1, m2):
     # O(10^n)
