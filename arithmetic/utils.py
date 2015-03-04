@@ -20,3 +20,13 @@ def halve(n):
 
 def double(n):
     return n<<1
+
+def gcd(a, b):
+    """Find the greatest common denominator of two integers.
+
+    Using Euclid's algorithm.
+    """
+    b = abs(b)
+    while b != 0:
+        a, b = (b, a % b)
+    return a
